@@ -7,6 +7,8 @@ public class RegistroResumos {
     private int quantidadeResumos;
     private int proximaPosicao;
 
+    // Criaria a classe "Resumo", na qual teria como atributos tema e conteudo, para facilitar a compreensão do codigo.
+
     public RegistroResumos(int numeroDeResumos) {
         this.temas = new String[numeroDeResumos];
         this.conteudos = new String[numeroDeResumos];

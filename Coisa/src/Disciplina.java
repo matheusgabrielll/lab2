@@ -1,9 +1,10 @@
 package lab2;
-
-//+ cadastraNota(nota : int, valorNota : double) : void
-//+ aprovado() : boolean
-//+ toString() : String
-//---
+/**
+ * Representação do acompanhamento de uma disciplina cursada pelo aluno,
+ * armazenando o nome da disciplina, horas de estudo dedicadas e 4 notas de avaliações.
+ *
+ * @author Matheus Gabriel Barreto Santos - 20260008741
+ */
 public class Disciplina {
 
     private String nomeDisciplina;
@@ -12,6 +13,15 @@ public class Disciplina {
     private double nota2;
     private double nota3;
     private double nota4;
+    /**
+     * Constrói uma disciplina com o nome informado.
+     * Inicializa as horas de estudo e todas as notas com zero.
+     *
+     * @param nomeDisciplina o nome da disciplina
+     */
+
+    // Ultilizaria um array de inteiros para atribuir as 4 notas, ao inves de 4 variaveis.
+
 
     public Disciplina(String nomeDisciplina) {
         this.nomeDisciplina = nomeDisciplina;
@@ -21,6 +31,11 @@ public class Disciplina {
         this.nota3 = 0;
         this.nota4 = 0;
     }
+    /**
+     * Acumula as horas dedicadas aos estudos dessa disciplina.
+     *
+     * @param horas a quantidade de horas a adicionar
+     */
 
     public void cadastraHoras(int horas) {
         this.horasEstudo = this.horasEstudo + horas;
@@ -37,6 +52,7 @@ public class Disciplina {
             this.nota4 = valorNota;
         }
     }
+    // Cadastraria a nota através do indice do array notas que deveria ser criado anteriormente.
 
     private double calculaMedia() {
         return (nota1 + nota2 + nota3 + nota4) / 4;

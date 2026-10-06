@@ -1,6 +1,11 @@
 package lab2;
-
-public class Coisa {
+/**
+ * Classe principal para testar e executar as funcionalidades desenvolvidas no Lab 2.
+ *
+ * @author Matheus Gabriel Barreto Santos - 20260008741
+ */
+public class
+Coisa {
     public static void main(String[] args) {
         registrarDescanso();
         System.out.println("-----");
