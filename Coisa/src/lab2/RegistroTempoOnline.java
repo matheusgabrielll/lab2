@@ -20,7 +20,6 @@ public class RegistroTempoOnline {
         this.tempoOnline = 0;
         this.tempoOnlineEsperado = 120;
     }
-
     /**
      * Constrói um registro com uma meta de tempo definida.
      *
@@ -60,7 +59,6 @@ public class RegistroTempoOnline {
     public String toString() {
         return nomeDisciplina + " " + tempoOnline + "/" + tempoOnlineEsperado;
     }
-
 }
 
 
